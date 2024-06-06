@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.2/aframe/build/aframe-ar.js"></script>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+    <title>AR Test!</title>
+</head>
+<body>
+    <h1 style="display: none;">Title</h1> <!-- Hide the title to avoid it showing over the AR scene -->
+    <a-scene embedded arjs>
+        <a-marker preset="hiro">
+            <a-image src="bg.jpg" position="0 0 0" rotation="-90 0 0" width="2" height="2"></a-image>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
